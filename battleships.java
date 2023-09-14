@@ -28,11 +28,13 @@ public class battleships
     {
         if(currentShips >= totalShips) 
         {
+            System.out.println("\n --------------------------- \n");
             System.out.println("\nComputer is deploying the battleships...\n");
             comAddShips();
 
         } else 
         {
+            System.out.println("\n --------------------------- \n");
             System.out.println("\nPlace your battleships....  total of " + currentShips + "/5\n");
             addShipsX();
         }
@@ -131,7 +133,6 @@ public class battleships
     // Player turn
     public static void nextTurn()
     {
-        System.out.println("\nYour turn\n");
         nextMoveX();
     }
 
@@ -186,6 +187,7 @@ public class battleships
     // Player turn to choose the coordinate
     public static void nextMoveX()
     {
+        System.out.println("\n --------------------------- \n");
         System.out.println("Your turn");
         System.out.println("Enter X coordinate: ");
         String x = System.console().readLine();
@@ -240,14 +242,14 @@ public class battleships
     // battleship algorithm system
     public static void match(String player, int x, int y)
     {
-        map();
-
         if(currentShips == 0)
         {
+            map();
             System.out.println("\nLOL you lost.\n");
 
         } else if(comCurrentShips == 0)
         {
+            map();
             System.out.println("\nohh you won.\n");
 
         } else 
@@ -260,12 +262,14 @@ public class battleships
                     System.out.println("\nLOL you sunk your own ship.\n");
 
                     currentShips--;
+                    System.out.println("\nCurrent battleships....  total of " + currentShips + "/5 left\nCurrent computer battleships....  total of " + comCurrentShips + "/5 left\n");
                     match("computer", 0, 0);
 
                 } else if(checkBattleships1[y][x] == null && checkBattleships2[y][x] != "true")
                 {
                     checkBattleships1[y][x] = "misses";
                     System.out.println("\nLOL you missed.\n");
+                    System.out.println("\nCurrent battleships....  total of " + currentShips + "/5 left\nCurrent computer battleships....  total of " + comCurrentShips + "/5 left\n");
                     match("computer", 0, 0);
 
                 } else if(checkBattleships1[y][x] == null && checkBattleships2[y][x] == "true")
@@ -275,11 +279,13 @@ public class battleships
                     System.out.println("\nWOW you sunk the ship.\n");
 
                     comCurrentShips--;
+                    System.out.println("\nCurrent battleships....  total of " + currentShips + "/5 left\nCurrent computer battleships....  total of " + comCurrentShips + "/5 left\n");
                     match("computer", 0, 0);
 
                } else
                {
                    System.out.println("\nLOL, why shoot the coordinate that already marked.\n");
+                   System.out.println("\nCurrent battleships....  total of " + currentShips + "/5 left\nCurrent computer battleships....  total of " + comCurrentShips + "/5 left\n");
                    match("computer", 0, 0);
                }
 
@@ -305,12 +311,18 @@ public class battleships
             System.out.println("\nComputer have sunk its own ship.\n");
 
             comCurrentShips--;
+            System.out.println("\nCurrent battleships....  total of " + currentShips + "/5 left\nCurrent computer battleships....  total of " + comCurrentShips + "/5 left\n");
+
+            map();
             nextMoveX();
 
         } else if(checkBattleships1[comY][comX] == null && checkBattleships2[comY][comX] == null)
         {
             checkBattleships2[comY][comX] = "com misses";
             System.out.println("\nComputer has missed.\n");
+            System.out.println("\nCurrent battleships....  total of " + currentShips + "/5 left\nCurrent computer battleships....  total of " + comCurrentShips + "/5 left\n");
+
+            map();
             nextMoveX();
 
         } else if(checkBattleships2[comY][comX] == null && checkBattleships1[comY][comX] == "true")
@@ -320,6 +332,9 @@ public class battleships
             System.out.println("\nLOL computer sunk your ship.\n");
 
             currentShips--;
+            System.out.println("\nCurrent battleships....  total of " + currentShips + "/5 left\nCurrent computer battleships....  total of " + comCurrentShips + "/5 left\n");
+
+            map();
             nextMoveX();
 
         } else
