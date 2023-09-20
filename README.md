@@ -1,2 +1,2 @@
 # wou-programming-foundation
-Main execution file is at Main.java
+The execution of the code file is at Main.java
