@@ -1,0 +1,10 @@
+1)Which of the following is not a Java features?;a. Dynamic;b. Architecture;b. Use of pointers;d. Object-Oriented;c;c. Use of pointers
+2) ___ is used to find and fix bugs in he Java programs;a. JVM;b. JRE;c. JDK;d. JDB;d;d. JDB
+3) What is the return type of the hashCode() method in the Object class;a. Objct;b. int;c. long;d. void;b;b. int
+4) Which of the following is primitive data type, except?;a. int;b. boolean;c. String;d. float;c;c. String
+5) What does the expression float a=35/0 return?;a. 0;b. Not a Number;c. infinity;d. Run time exception;c;c. infinty
+6) Which of the following tool is used to generate API documentation in HTML format from documents in source code?;a. javap tool;b. javadoc tool;c. javaw command;d. javah command;b;b. javadoc tool
+7) Which of the following creates a list of 3 visible items and multiple selection ables?;a. new List(3, true);b. new List(false, 3);c. new List(true, 3);d. new List(3,false);a;a. new List(3, true)
+8) In which process, a local variable has the same name as one of the instance variables?;a. Serialization;b. Abstraction;c. Multi threading;d. Variable Shadowing;d;d. Variable Shadowing
+9) An interface with no fields or methods is know as a?;a. Runnable interface;b. Marker Interface;c. Abstract Interface;d. CharSequence Interface;b;b. Marker Interface
+10) In which memory a String is stored, when we create a string using new operator?;a. Stack;b. String memory;c. Heap memory;d. Random storage space;c;c. Heap memory

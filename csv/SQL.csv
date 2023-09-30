@@ -1,0 +1,10 @@
+1) What is the full form of SQL?;a. Structured Query List;b. Structure Query Language;c. Sample Query Language;d. None of these.;b;b. Structure Query Language
+2) Which of the following is not a valid SQL type?;a. FLOAT;b. NUMERIC;c. DECIMAL;d. CHARACTER;C;c. DECIMAL
+3) Which statement is used to delete all rows in a table without having the action logged?;a. DELETE;b. REMOVE;c. DROP;d. TRUNCATE;d;d. TRUNCATE
+4) SQL Views are also known as?;a. Simple tables;b. Virtual tables;c. Complete tables;d. Actual Table;b;b. Virtual tables
+5) Which datatype can store unstructured data in colomn?;a. CHAR;b. RAW;c. NUMERIC;d. VARCHAR;b;b. RAW
+6) Which of the following is not Constraint in SQL?;a. Primary Key;b. Not Null;c. Check;d. Union;d;d. Union
+7) Which of the following is not a DDL command?;a. TRUNCATE;b. ALTER;c. CREATE;d. UPDATE;d;d. UPDATE
+8) Which operator is used to compare a value to a specified list of values?;a. ANY;b. BETWEEN;c. ALL;d. IN;d;d. IN
+9) What is returend by INSTR ('JAVA POINT', 'P')?;a. 6;b. 7;c. POINT;d. JAVAT;b;b. 7
+10) A command that lets you change one or more field in a table is?;a. INSERT;b. MODIFY;c. LOOK UP;d. All of the above;b;b. MODIFY
